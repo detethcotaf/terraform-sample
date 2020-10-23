@@ -1,4 +1,4 @@
-module "data-monitoring" {
+module "samples" {
   source  = "../../modules/"
   
   ENV     = "dev"
