@@ -1,5 +1,3 @@
 # terraform-sample
-terraform sample files for Fargate Micro Services
+terraform sample files for networks
 
-- modules
-- services
