@@ -21,14 +21,3 @@ variable SUBNET_C_CIDR {
   description = "subnet cのCIDR"
   default = "10.0.2.0/24"
 }
-
-variable SG_CIDR {`
-  type = list(string)
-  description = "Security Groupにて通信したいCIDRのリスト"
-  default = ["10.0.0.0/16",]
-}
-
-variable ACM_ARN {
-  type = string
-  description = "ACMのARN"
-}
