@@ -7,25 +7,25 @@ variable ENV {
 variable VPC_CIDR {
   type = string
   description = "VPCのCIDR"
-  default = "10.1.0.0/16"
+  default = "10.0.0.0/16"
 }
 
 variable SUBNET_A_CIDR {
   type = string
   description = "subnet aのCIDR"
-  default = "10.1.1.0/24"
+  default = "10.0.1.0/24"
 }
 
 variable SUBNET_C_CIDR {
   type = string
   description = "subnet cのCIDR"
-  default = "10.1.2.0/24"
+  default = "10.0.2.0/24"
 }
 
-variable SG_CIDR {
+variable SG_CIDR {`
   type = list(string)
   description = "Security Groupにて通信したいCIDRのリスト"
-  default = ["10.1.0.0/16",]
+  default = ["10.0.0.0/16",]
 }
 
 variable ACM_ARN {
